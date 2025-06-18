@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Tシャツ, プリント, オリジナル, オリジナルTシャツ, クラスTシャツ, サークルTシャツ, チームウェア, 学園祭, 文化祭, 体育祭, 大学生, 高校生, 関大生, 近大生, 学生, 学生団体, 大阪, 吹田, 関西, 小ロット対応, 1枚からOK, 激安,  デザインサポート, 早い">
+
+  <title>まちのプリント屋さん</title>
+  <meta name="description" content="高品質なオリジナルTシャツを小ロットから制作可能。関大生や近大生にも人気！。デザインサポートも充実しています。">
+  <!-- ▼ OGP設定 ▼ -->
+<meta property="og:title" content="まちのプリント屋さん｜Tシャツ・トートバッグ・パーカーなどオリジナル制作" />
+<meta property="og:description" content="高品質なオリジナルTシャツを小ロットから制作可能。関大生・近大生にも人気！デザインサポートも充実しています。" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://machipri.com/" />
+<meta property="og:image" content="https://machipri.com/images/TshirtCharacter.jpg" />
+<meta property="og:site_name" content="まちのプリント屋さん" />
+<meta property="og:locale" content="ja_JP" />
+
+<!-- ▼ Twitterカード設定 ▼ -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="まちのプリント屋さん｜オリジナルTシャツ制作" />
+<meta name="twitter:description" content="クラスTシャツやサークルTシャツなど、オリジナルグッズを小ロットから制作可能！" />
+<meta name="twitter:image" content="https://machipri.com/images/TshirtCharacter.jpg" />
+
+  
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 1.3em;
+      background: #fefefe;
+      color: #333;
+    }
+    header {
+      background: #f56565;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      font-size: 2.5em;
+      font-weight: bold;
+      display: inline-flex;
+  align-items: center;
+  gap: 0.5em; /* 文字との間に少し余白 */
+}
+
+.logo-img {
+  height: 1.7em; /* テキストとバランス良く調整 */
+  vertical-align: middle;
+
+    }
+    .subtitle {
+      color: white;
+      font-size: 1.5em;
+      margin-top: 0.1em;
+      font-weight: normal;
+      font-style: italic;
+    }
+    .highlight {
+  color: #ff0000; /* 赤系、必要に応じて調整可能 */
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.logo-img.flip-horizontal {
+  transform: scaleX(-1);
+}
+
+    main {
+      padding: 1.5em;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #f56565;
+    }
+    .product-item {
+      margin-bottom: 2em;
+      border-bottom: 1px solid #000000;
+      padding-bottom: 1em;
+    }
+    .product-item a {
+      display: inline-block;
+      margin-top: 0.5em;
+      color: #f56565;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .section {
+      margin-top: 3em;
+      
+    }
+    .faq, .flow, .category, .gallery, .line-section {
+      margin-bottom: 2em;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+    details {
+      margin-bottom: 1em;
+    }
+    .line-button {
+      display: inline-block;
+      padding: 0.8em 1.2em;
+      background: #00c300;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    .flow-container {
+  display: flex;
+  flex-wrap: nowrap; /* 折り返さない */
+  overflow-x: auto;   /* 横スクロール対応 */
+  align-items: stretch;
+  gap: 1em;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.flow-step {
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.flow-step img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.flow-step p {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+}
+
+.arrow {
+  font-size: 1em;
+  color: #000;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+}
+
+    .product-img {
+      width: auto;
+      max-height: 440px;
+      object-fit: contain;
+      display: block;
+      margin-bottom: 0.5em;
+      margin-left: 0;
+    }
+    .product-images {
+  display: flex;
+  gap: 1em; /* 画像同士のすき間を調整（必要に応じて変更可） */
+}
+
+.product-images .product-img {
+  width: calc(50% - 0.5em); /* 2枚を横に並べてちょっと余裕持たせる */
+  height: auto;
+  max-height: 440px;
+  object-fit: contain;
+  margin-left: 0;
+}
+
+.faq-section details {
+  margin-bottom: 1em;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.faq-section summary {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+details summary {
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+.q-mark {
+  color: red;
+  font-weight: bold;
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+    <img src="images/TshirtCharacter.jpg" alt="ロゴ" class="logo-img flip-horizontal">
+    まちのプリント屋さん
+    <img src="images/TshirtCharacter.jpg" alt="ロゴ" class="logo-img">
+  </a>
+    <div class="subtitle">〜Tシャツ、パーカー、トートバッグなどあなたの
+      <span class="highlight">”思い”をカタチ</span>に〜
+    </div>
+  </header>
+  <main>
+    <h1>人気商品ランキング</h1>
+
+    <div class="product-item">
+      <h2>ベーシックTシャツ</h2>
+      <div class="product-images">
+      <img class="product-img" alt="ベーシックTシャツの画像" src="images/basicTshirt.jpg" />
+      <img class="product-img" alt="ベーシックTシャツの画像" src="images/basicTshirtcolor1.jpg" />
+      </div>
+      <p>全体のシルエットをスタイリッシュに仕上げた程よい肉厚のスタンダードTシャツ</p>
+      <a href="basic-tshirt.html">▶ 詳細ページへ</a>
+    </div>
+
+    <div class="product-item">
+      <h2>ドライTシャツ</h2>
+      <img class="product-img" alt="ドライTシャツの画像" src="images/dryTshirt.jpg" />
+      <p>吸汗速乾のスポーツ向けドライ素材Tシャツ</p>
+      <a href="dry-tshirt.html">▶ 詳細ページへ</a>
+    </div>
+
+    <div class="product-item">
+      <h2>ドライポロシャツ</h2>
+      <img class="product-img" alt="ドライポロシャツの画像" src="images/drypoloshirt.jpg" />
+      <p>軽やかなメッシュ素材のドライポロ</p>
+      <a href="dry-polo.html">▶ 詳細ページへ</a>
+    </div>
+
+    <div class="section category">
+      <h2>商品カテゴリー</h2>
+      <details>
+        <summary>・Tシャツ</summary>
+        <ul>
+          <li><a href="basic-tshirt.html">ベーシックTシャツ</a></li>
+          <li><a href="heavyweight-tshirt.html">ヘビーウェイトTシャツ</a></li>
+          <li><a href="highquality-tshirt.html">ハイクオリティTシャツ</a></li>
+          <li><a href="dry-tshirt.html">ドライTシャツ</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>・長袖Tシャツ</summary>
+        <ul>
+          <li><a href="longTshirt.html">長袖Tシャツ</a></li>
+          <li><a href="superheavylongTshirt.html">スーパーヘビー長袖Tシャツ</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>・ポロシャツ</summary>
+        <ul>
+          <li><a href="poloshirt.html">ポロシャツ</a></li>
+          <li><a href="dry-polo.html">ドライポロシャツ</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>・スウェット</summary>
+        <ul>
+          <li><a href="sweatshirt.html">クルーネックスウェット(裏パイル)
+          </a></li>
+          <li><a href="sweatshirtura.html">クルーネックスウェット（裏起毛）</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>・パーカー</summary>
+        <ul>
+          <li><a href="hoodienozip.html">プルオーバーパーカー（ジップなし）</a></li>
+          <li><a href="hoodiefullzip.html">プルオーバーパーカー（フルジップ）</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>・その他</summary>
+        <ul>
+          <li><a href="eventcap.html">イベントキャップ</a></li>
+        </ul>
+      </details>
+    </div>
+
+    <div class="section line-section">
+      <h2>LINEでお問い合わせ</h2>
+      <p>ご注文やご相談はLINE公式アカウントからお気軽にどうぞ！</p>
+      <a href="https://lin.ee/l9QD6h2" class="line-button">▶ 友だち追加</a>
+    </div>
+
+    <div class="section flow">
+  <h2>ご注文の流れ</h2>
+  <div class="flow-container">
+    <div class="flow-step">
+      <img src="images/step1.jpg" alt="ステップ1" />
+      <p>ご希望の商品を選ぶ</p>
+    </div>
+    <div class="arrow">▶︎</div>
+    <div class="flow-step">
+      <img src="images/step2.jpg" alt="ステップ2" />
+      <p>LINEまたはメールで相談</p>
+    </div>
+    <div class="arrow">▶︎</div>
+    <div class="flow-step">
+      <img src="images/step3.jpg" alt="ステップ3" />
+      <p>デザイン確認・お見積もり</p>
+    </div>
+    <div class="arrow">▶︎</div>
+    <div class="flow-step">
+      <img src="images/step4.jpg" alt="ステップ4" />
+      <p>制作・1週間ほどで納品</p>
+    </div>
+  </div>
+</div>
+
+    <section class="faq-section">
+      <h2>よくある質問</h2>
+
+      <details>
+    <summary><span class="q-mark">Q</span> 納期はどのくらいかかるの？</summary>
+    <p>A. 大体1週間ほどで完成します。</p>
+  </details>
+
+  <details>
+    <summary><span class="q-mark">Q</span> デザインを入稿したあとどうすればいいの？</summary>
+    <p>A. イメージ図と最終確認を行いますので、ご確認下さい。了承いただければ正式発注となります。</p>
+  </details>
+
+  <details>
+    <summary><span class="q-mark">Q</span> お支払い方法は何がありますか？</summary>
+    <p>A. 現金決済となります。</p>
+  </details>
+
+  <details>
+    <summary><span class="q-mark">Q</span> インターネットなどから取得したデザインは使用できますか？</summary>
+    <p>A. 著作権等版権があるものは使用出来ません。</p>
+  </details>
+
+  <details>
+    <summary><span class="q-mark">Q</span> イメージ図の確認後、変更は可能ですか？</summary>
+    <p>A. 正式発注前であれば何回でも問題ありません。</p>
+  </details>
+
+  <details>
+    <summary><span class="q-mark">Q</span> デザインは原寸サイズでなくても大丈夫ですか？</summary>
+    <p>A. 原寸もしくは原寸より大きいサイズでお願いします。拡大する場合柄がたつ場合がございます。</p>
+  </details>
+
+  <details>
+    <summary><span class="q-mark">Q</span> 何色まで可能ですか？</summary>
+    <p>A. 制限はありませんが、金色など箔プリントは別途料金となります。</p>
+  </details>
+
+  <details>
+    <summary><span class="q-mark">Q</span> 正式発注後の変更は出来ますか？</summary>
+    <p>A. 原則としてデザインの変更や色の変更等致しかねます。追加手数料をいただいた上で、納期延長が可能な場合に限り変更可能な場合がございますので、お問い合わせください。</p>
+  </details>
+</section>
+
+    <footer style="text-align:center; padding:1em; font-size:0.9em; color:#666;">
+      © 2025 まちのプリント屋さん
+    </footer>
+  </main>
+</body>
+</html>
