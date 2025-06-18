@@ -29,10 +29,14 @@
       display: inline-flex;
   align-items: center;
   gap: 0.5em; /* 文字との間に少し余白 */
+      flex-wrap: wrap; /* ← 追加：スマホで折り返しOKに */
+  max-width: 100%;  /* ← 追加：はみ出し防止 */
+  box-sizing: border-box; /* ← 追加：padding等も含めて制限 */
 }
 
 .logo-img {
   height: 1.7em; /* テキストとバランス良く調整 */
+  max-width: 100%;
   vertical-align: middle;
 
     }
@@ -198,6 +202,17 @@ table tbody td {
 body {
   padding-bottom: 50px; /* 固定ボタン分の余白確保 */
 }
+    @media screen and (max-width: 600px) {
+  header a {
+    font-size: 1.3em;
+    flex-wrap: nowrap;
+    white-space: normal;
+    gap: 0.3em;
+  }
+
+  .logo-img {
+    height: 1.4em;
+  }
 </style>
 </head>
 <body>
