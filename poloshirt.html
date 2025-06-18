@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ポロシャツ | まちのプリント屋さん</title>
+  <meta name="description" content="高品質なオリジナルTシャツを小ロットから制作可能。販促グッズやチームウェアにも対応。デザインサポートも充実。">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 1.3em;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      background: #f56565;
+      padding: 1em;
+      text-align: center;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      font-size: 2.5em;
+      font-weight: bold;
+      display: inline-flex;
+  align-items: center;
+  gap: 0.5em; /* 文字との間に少し余白 */
+}
+
+.logo-img {
+  height: 1.7em; /* テキストとバランス良く調整 */
+  vertical-align: middle;
+
+    }
+    main {
+      padding: 1.5em;
+      max-width: 800px;
+      margin: 2em auto;
+      padding-bottom: 60px;
+    }
+    h1 {
+      color: #f56565;
+    }
+     .images {
+      display: flex;
+      gap: 1em;
+      margin-bottom: 1.5em;
+      align-items: stretch; /* 高さを揃える */
+    }
+    .color-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-top: 1em;
+}
+    .main-image {
+  flex: 3;
+}
+
+.logo-img.flip-horizontal {
+  transform: scaleX(-1);
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.sub-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.sub-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.sub-caption {
+  margin-top: 0.3em;
+  font-size: 0.95em;
+  text-align: center;
+  color: #555;
+}
+    .section {
+      margin-bottom: 2em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 1em;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+      padding: 0.5em;
+      text-align: center;
+    }
+      table thead th {
+  background-color: #f0f0f0; /* ← 見出しだけグレー */
+}
+
+table tbody td {
+  background-color: #ffffff; /* ← データ行は白 */
+}
+    .back-link {
+      display: inline-block;
+      margin-top: 2em;
+      color: #f56565;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    
+  }
+  .fixed-contact-area {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00c300; /* LINEグリーン */
+    color: white;
+    text-align: center;
+    padding: 0.8em 0;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+    z-index: 1000;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  /* PCではQRコードを表示、ボタンは非表示 */
+  .mobile-add-button {
+    display: none;
+  }
+  .pc-qr {
+    display: block;
+  }
+
+  /* スマホ（幅767px以下）ではボタン表示、QRは非表示 */
+  @media screen and (max-width: 767px) {
+    .pc-qr {
+      display: none;
+    }
+    .mobile-add-button {
+      display: inline-block;
+      color: white;
+      background-color: #00c300;
+      padding: 0.8em 1.5em;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .mobile-add-button:hover {
+      background-color: #009900;
+    }
+  }
+  
+.fixed-contact-button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00b900; /* LINEグリーン */
+  text-align: center;
+  padding: 12px 0;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.15);
+  z-index: 9999;
+}
+.fixed-contact-button a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.fixed-contact-button a:hover {
+  opacity: 0.8;
+}
+body {
+  padding-bottom: 50px; /* 固定ボタン分の余白確保 */
+}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="images/TshirtCharacter.jpg" alt="ロゴ" class="logo-img flip-horizontal">
+      まちのプリント屋さん
+    <img src="images/TshirtCharacter.jpg" alt="ロゴ" class="logo-img">
+  </a>
+  </header>
+  <main>
+    <h1>ポロシャツ</h1>
+    <p>いつでも使えて誰でも似合う。ポロシャツの王道。
+左胸ポケット付きなので、ワークシーンにも活躍。</p>
+
+    <div class="images">
+      <div class="main-image">
+        <img src="images/poloshirtmain.jpg" alt="メイン画像">
+      </div>
+      <div class="sub-images">
+        <div class="sub-image">
+          <img src="images/poloshirtsub1.jpg" alt="サブ画像">
+          <p class="sub-caption">襟元拡大</p>
+        </div>
+        <div class="sub-image">
+          <img src="images/poloshirtsub2.jpg" alt="サブ画像">
+          <p class="sub-caption">袖口拡大</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>生地情報</h2>
+      <p>■195g/m（5.80z）交編の子</br>
+      <br>■本体：綿65%ポリエステル35％</br>
+      <br>■リブ：綿60%ポリエステル40%</p>
+    </div>
+
+    <div class="section">
+      <h2>カラー展開</h2>
+      <img src="images/poloshirtcolor.jpg" alt="カラー展開" class="color-image">
+    </div>
+
+    <div class="section">
+      <h2>サイズ</h2>
+      <img src="images/poloshirtsize.jpg" alt="サイズ展開" class="color-image">
+    </div>
+
+    <div class="section">
+      <h2>料金設定（税込）</h2>
+      <table>
+        <thead>
+          <tr><th>プラン</th><th>一般</th><th>学生割引</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>胸か背中どっちか</td><td>2,700円</td><td>2,200円</td></tr>
+          <tr><td>胸と背中どっちも！</td><td>2,900円</td><td>2,400円</td></tr>
+          <tr><td>胸と背中、さらに袖も！</td><td>3,200円</td><td>2,700円</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <a href="index.html" class="back-link">← トップページに戻る</a>
+  </main>
+  <div class="fixed-contact-button">
+  <a href="https://lin.ee/l9QD6h2" target="_blank" rel="noopener noreferrer">
+    ご注文・お問い合わせはこちら
+  </a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>イベントキャップ | まちのプリント屋さん</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+      font-size: 1.3em;
+      padding-bottom: 50px; /* 固定ボタン分の余白確保 */
+    }
+    header {
+      background: #f56565;
+      padding: 1em;
+      text-align: center;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      font-size: 2.5em;
+      font-weight: bold;
+      display: inline-flex;
+  align-items: center;
+  gap: 0.5em; /* 文字との間に少し余白 */
+}
+
+.logo-img {
+  height: 1.7em; /* テキストとバランス良く調整 */
+  vertical-align: middle;
+    }
+    main {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 0 1.5em;
+    }
+    h1 {
+      color: #f56565;
+      margin-top: 1em;
+    }
+    .images {
+      display: flex;
+      gap: 1em;
+      margin-bottom: 1.5em;
+      align-items: stretch; /* 高さを揃える */
+    }
+    .color-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-top: 1em;
+}
+    .main-image {
+  flex: 3;
+}
+.logo-img.flip-horizontal {
+  transform: scaleX(-1);
+}
+
+.main-image img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.sub-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.sub-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.sub-caption {
+  margin-top: 0.3em;
+  font-size: 0.95em;
+  text-align: center;
+  color: #555;
+}
+    .section {
+      margin-bottom: 2em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 1em;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+      padding: 0.5em;
+      text-align: center;
+    }
+      table thead th {
+  background-color: #f0f0f0; /* ← 見出しだけグレー */
+}
+
+table tbody td {
+  background-color: #ffffff; /* ← データ行は白 */
+}
+    .back-link {
+      display: inline-block;
+      margin-top: 2em;
+      color: #f56565;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .fixed-contact-button {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #00b900; /* LINEグリーン */
+      text-align: center;
+      padding: 12px 0;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.15);
+      z-index: 9999;
+    }
+    .fixed-contact-button a {
+      color: white;
+      font-weight: bold;
+      font-size: 1.1em;
+      text-decoration: none;
+      display: inline-block;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .fixed-contact-button a:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="images/TshirtCharacter.jpg" alt="ロゴ" class="logo-img flip-horizontal">
+      まちのプリント屋さん
+    <img src="images/TshirtCharacter.jpg" alt="ロゴ" class="logo-img">
+  </a>
+  </header>
+
+  <main>
+    <h1>イベントキャップ</h1>
+    <p>定番メッシュキャップ。ジュニアサイズも全色展開！豊かな51色のバリエーション。</p>
+
+     <div class="images">
+      <div class="main-image">
+        <img src="images/eventcapmain.jpg" alt="メイン画像">
+      </div>
+    </div>
+
+    <div class="section">
+    <h2>素材</h2>
+    <p>ポリエステル100％</p>
+    </div>
+
+    <div class="section">
+      <h2>カラー展開</h2>
+      <img src="images/eventcapcolor.jpg" alt="カラー展開" class="color-image">
+    </div>
+
+    <h2>サイズ</h2>
+    <p>Jr. 53〜57cm　/ FREE　56cm〜60cm </p>
+
+    <div class="section">
+      <h2>料金設定（税込）</h2>
+      <table>
+        <thead>
+          <tr><th>価格</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1,500円</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <a href="index.html" class="back-link">← トップページに戻る</a>
+  </main>
+
+  <div class="fixed-contact-button">
+    <a href="https://lin.ee/l9QD6h2" target="_blank" rel="noopener noreferrer">
+      ご注文・お問い合わせはこちら
+    </a>
+  </div>
+
+</body>
+</html>
