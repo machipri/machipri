@@ -38,7 +38,6 @@
     font-size: 1.1em; /* スマホで文字を少し小さく */
   }
 }
-
     header {
       background: #f56565;
       color: white;
@@ -201,6 +200,15 @@
   object-fit: contain;
   margin-left: 0;
 }
+@media screen and (max-width: 600px) {
+  .product-images {
+    flex-wrap: nowrap;
+  }
+
+  .product-images img {
+    max-width: 180px; /* 画像サイズを大きく */
+  }
+}
 
 .faq-section details {
   margin-bottom: 1em;
@@ -271,7 +279,10 @@ details summary::-webkit-details-marker {
   <h2 style="color: #d00000; font-size: 1.8em; margin-bottom: 0.5em;">🎓 学生の方必見！！</h2>
   <p style="font-size: 1.3em; font-weight: bold; color: #333; margin-bottom: 1em;">
     <span style="color: #f56565;">1番人気のプラン</span>（胸と背中両方プリント）で<br>
-    <span style="font-size: 1.5em; color: #d00000;">ベーシックTシャツが1枚<span style="font-weight: bold;">2,000円（税込）</span>！</span>
+    <span style="font-size: 1.4em; color: #d00000;">
+      <span style="color: black;">ベーシックTシャツが</span>1枚
+      <span style="font-weight: bold;">2,000円（税込）</span>！
+    </span>
   </p>
 
   <div style="display: flex; justify-content: center; gap: 1em; flex-wrap: wrap; margin-bottom: 1em;">
@@ -284,7 +295,6 @@ details summary::-webkit-details-marker {
   <div class="check-item">✅ 1枚からでも注文可能！</div>
   <div class="check-item">✅ 追加料金は一切ナシ！</div>
 </div>
-     
 
 </div>
  
@@ -443,3 +453,4 @@ details summary::-webkit-details-marker {
   </main>
 </body>
 </html>
+
