@@ -47,7 +47,7 @@
       display: inline-flex;
   align-items: center;
   gap: 0.5em; /* 文字との間に少し余白 */
-      flex-wrap: wrap; /* ← 追加：スマホで折り返しOKに */
+  flex-wrap: wrap; /* ← 追加：スマホで折り返しOKに */
   max-width: 100%;  /* ← 追加：はみ出し防止 */
   box-sizing: border-box; /* ← 追加：padding等も含めて制限 */
 }
@@ -74,6 +74,21 @@
 .logo-img.flip-horizontal {
   transform: scaleX(-1);
 }
+
+.check-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 左揃え */
+  gap: 0.5em;
+  margin-top: 1em;
+}
+
+.check-item {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: left;
+}
+
 
     main {
       padding: 1.5em;
@@ -207,7 +222,7 @@ details summary::-webkit-details-marker {
   color: red;
   font-weight: bold;
 }
-    
+
 @media screen and (max-width: 600px) {
   header a {
     font-size: 1.3em;
@@ -231,7 +246,6 @@ details summary::-webkit-details-marker {
   }
 }
 
-
   </style>
 </head>
 <body>
@@ -246,6 +260,27 @@ details summary::-webkit-details-marker {
     </div>
   </header>
   <main>
+
+   <div style="background: #fffae6; border: 3px dashed #f56565; padding: 1em; margin-bottom: 2em; text-align: center; border-radius: 12px;">
+  <h2 style="color: #d00000; font-size: 1.8em; margin-bottom: 0.5em;">🎓 学生の方必見！！</h2>
+  <p style="font-size: 1.3em; font-weight: bold; color: #333; margin-bottom: 1em;">
+    <span style="color: #f56565;">1番人気のプラン</span>（胸と背中両方プリント）で<br>
+    <span style="font-size: 1.5em; color: #d00000;">ベーシックTシャツが1枚<span style="font-weight: bold;">2,000円（税込）</span>！</span>
+  </p>
+
+  <div style="display: flex; justify-content: center; gap: 1em; flex-wrap: wrap; margin-bottom: 1em;">
+    <img src="images/sample1.jpg" alt="Tシャツサンプル1" style="max-width: 45%; height: auto; border-radius: 8px; border: 1px solid #ccc;">
+    <img src="images/sample2.jpg" alt="Tシャツサンプル2" style="max-width: 45%; height: auto; border-radius: 8px; border: 1px solid #ccc;">
+  </div>
+
+  <div class="check-list">
+  <div class="check-item">✅ 何色使ってもOK！</div>
+  <div class="check-item">✅ 1枚からでも注文可能！</div>
+  <div class="check-item">✅ 追加料金は一切ナシ！</div>
+</div>
+
+</div>
+ 
     <h1>人気商品ランキング</h1>
 
     <div class="product-item">
